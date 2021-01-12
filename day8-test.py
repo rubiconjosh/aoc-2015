@@ -15,3 +15,7 @@ def test_single_escaped_character():
 
 def test_hexadecimal_character():
     assert character_count(r'"\x27"') == 1
+
+
+def test_double_slash():
+    assert character_count(r'"\\"') == 1

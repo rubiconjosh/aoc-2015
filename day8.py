@@ -4,7 +4,7 @@ def character_count(string):
         if letter == '\\':
             if string[index+1] == 'x':
                 escaped_characters += 3
-            else:
+            elif index != 0 and string[index - 1] != '\\':
                 escaped_characters += 1
 
     return len(string) - escaped_characters - 2
