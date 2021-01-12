@@ -1,2 +1,2 @@
 def character_count(string):
-    return 0
+    return len(string) - 2
