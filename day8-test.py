@@ -11,3 +11,7 @@ def test_characters_only():
 
 def test_single_escaped_character():
     assert character_count(r'"aaa\"aaa"') == 7
+
+
+def test_hexadecimal_character():
+    assert character_count(r'"\x27"') == 1
